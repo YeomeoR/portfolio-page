@@ -59,19 +59,32 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: lightblue;
+  color: rgb(235, 243, 162);
   font-weight: bold;
+  margin: 0.5rem;
+}
+.anchor {
+  margin: 0.5rem;
+}
+.container3 {
+  display: flex;
+  justify-content: center;
 }
 a:hover {
   color: rgb(248, 245, 245);
-
   transition: all 0.5s ease;
 }
-.bg {
-  background-color: rgb(67, 36, 240);
+a.bg {
+  background-color: rgb(12, 180, 12);
+  color: rgb(243, 250, 218);
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
   padding: 0.1rem;
-  border-radius: 15px;
+  margin: 1.1rem 1rem;
   opacity: 0.7;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 0.5px solid grey;
 }
 .bg:hover {
   opacity: 1;
@@ -85,7 +98,6 @@ a:hover {
   background: greenyellow;
   color: orangered;
   max-width: 50%;
-  font-weight: bold;
 }
 @keyframes animate {
   0%,18%,20%,
@@ -127,7 +139,22 @@ a:hover {
   height: 60vh;
 }
 h3 {
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  color: rgb(91, 91, 247);
+  text-shadow: 2px 0px 2px black;
+}
+h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: rgb(247, 161, 91);
+  text-shadow: 2px 2px 2px black;
+}
+h5 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: rgb(91, 91, 247);
+  text-shadow: 2px 2px 2px rgb(233, 224, 224);
 }
 h3 p {
   font-family: 'Poppins';
@@ -187,6 +214,10 @@ h3 p {
     margin: 0.1rem;
     padding: 0.1rem;
   }
+  .container3 {
+    display: block;
+    margin: 1.5rem;
+  }
 }
 
 /* scroll  */
@@ -239,7 +270,7 @@ h3 p {
   h2 {
     font-size: 2rem;
   }
-  img{
+  img {
     object-fit: scale-down;
   }
 }
